@@ -9,7 +9,10 @@ pipeline {
         stage('Initialize'){
             steps {
             sh '''
-              echo test
+              ls
+            '''
+            sh '''
+            mvn clean install
             '''
             }
         }
