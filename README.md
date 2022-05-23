@@ -75,3 +75,4 @@ INSERT INTO authorities VALUES
 ('ad 123', 'ROLE_AKS'),
 ('abc 1234', 'ROLE_ADMIN');
 
+---
