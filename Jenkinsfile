@@ -1,9 +1,16 @@
 pipeline {
     agent any
      tools {
-         stages {
+        
          maven '3'
          jdk 'jdk9'
          }
-     }
+    stages {
+        stage('Initialize'){
+            sh '''
+              echo test
+            '''
+        }
+    }
+     
 }
