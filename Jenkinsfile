@@ -7,9 +7,7 @@ pipeline {
          dockerTool 'docker'
 
          }
-    environment {
-    DOCKER_CERT_PATH = credentials('id-for-a-docker-cred')
-   }
+    
     stages {
         stage('Initialize'){
             steps {
