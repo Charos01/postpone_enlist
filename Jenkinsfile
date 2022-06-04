@@ -17,7 +17,7 @@ pipeline {
             mvn clean install -DskipTests
             '''
              script{
-            docker.build("postpone_enlist")
+            dockerTool.build("postpone_enlist")
              }
                
             }
