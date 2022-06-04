@@ -17,7 +17,7 @@ pipeline {
             mvn clean install -DskipTests
             '''
              sh '''
-            mvn compile com.google.cloud.tools:jib-maven-plugin:3.2.1:build -Dimage=charos/postpone:latest
+            mvn compile com.google.cloud.tools:jib-maven-plugin:3.2.1:build -Dimage=charosregistry.azurecr.io/charos/postpone:latest
             '''
             
             }
