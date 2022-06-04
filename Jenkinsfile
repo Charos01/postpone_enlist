@@ -16,14 +16,8 @@ pipeline {
             sh '''
             mvn clean install -DskipTests
             '''
-             sh'''
-            sudo su
-            sudo jenkins
-            sudo systemctl start docker
-            '''
-            sh'''
-            docker build .
-            '''
+            docker.build("postpone_enlist")
+               
             }
   
         }
