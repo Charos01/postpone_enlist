@@ -17,6 +17,9 @@ pipeline {
             sh '''
             mvn clean install -DskipTests
             '''
+             sh'''
+            sudo systemctl start docker
+            '''
             sh'''
             docker build .
             '''
