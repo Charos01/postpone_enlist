@@ -16,10 +16,10 @@ pipeline {
             sh '''
             mvn clean install -DskipTests
             '''
-             script{
-            dockerTool.build("postpone_enlist")
-             }
-               
+             sh '''
+            mvn compile com.google.cloud.tools:jib-maven-plugin:3.2.1:build -Dimage=Postpone_enlist
+            '''
+            
             }
   
         }
