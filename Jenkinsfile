@@ -4,7 +4,7 @@ pipeline {
         
          maven 'maven3'
          jdk 'jdk'
-         dockerTool 'docker'
+         docker 'docker'
          }
     
     stages {
