@@ -16,8 +16,9 @@ pipeline {
             '''
             sh '''
             mvn clean install -DskipTests
-            
-            
+            '''
+            sh'''
+            docker build .
             '''
             }
   
