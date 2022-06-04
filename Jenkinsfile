@@ -21,10 +21,20 @@ pipeline {
              
             '''
             
+            
             }
   
-        }
+        } stage('test ssh'){
+            steps {
+                sshagent(credentials:['ssh-delpyment-1']){
+                    
+                
+                  sh '''
+                    ssh jenkins@51.120.120.217 '''
+            
+                }
     }
+        }
 
 }
      
