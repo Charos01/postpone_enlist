@@ -18,6 +18,7 @@ services:
          - "8080:80"
        env_file: ./env-var
        depends_on:
-         - db
-volumes:
+                db: 
+                   condition: service_healthy
+volumes:  
     mysqldbvol:
