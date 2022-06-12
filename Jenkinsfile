@@ -25,7 +25,7 @@ pipeline {
        }
         stage('Ansible'){
             steps { 
-                ansiblePlaybook installation: 'ansible'
+                ansiblePlaybook installation: 'ansible' , playbook: 'docker-playbook.yml'
             }
         }
         }
