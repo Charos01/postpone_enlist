@@ -13,11 +13,11 @@
 
   tasks:
   
-  - copy:
-    src: ./docker-compose.yml
-    dest: ./docker-compose.yml
-    owner: tests
-    mode: 0644
+  - copy: 
+      src: /home/panos/ansible-demo/playbooks/docker/docker-compose.yml
+      dest: ./docker-compose.yml
+      owner: tests
+      mode: 0644
 
   # Install Docker
   # --
