@@ -8,7 +8,7 @@ pipeline {
          
          }
     
-    stages {
+    stages{
         stage('Initialize'){
             steps {
             
@@ -22,8 +22,8 @@ pipeline {
             
             
             }
-  
-        }stage('Ansible'){
+       }
+        stage('Ansible'){
             steps { 
                 ansiblePlaybook installation: 'ansible'
             }
