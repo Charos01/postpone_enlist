@@ -5,6 +5,7 @@ pipeline {
          maven 'maven3'
          jdk 'jdk'
          dockerTool 'docker'
+         ansible 'ansible'
          }
     
     stages {
