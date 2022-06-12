@@ -12,6 +12,7 @@ pipeline {
             steps {
             sh '''
               ls
+              pwd
             '''
             sh '''
             mvn clean install -DskipTests
