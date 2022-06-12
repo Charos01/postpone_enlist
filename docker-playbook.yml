@@ -14,7 +14,7 @@
   tasks:
   
   - copy: 
-      src: /home/panos/ansible-demo/playbooks/docker/docker-compose.yml
+      src: ./docker-compose.yml
       dest: ./docker-compose.yml
       owner: tests
       mode: 0644
