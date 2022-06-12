@@ -11,9 +11,9 @@ services:
         - MYSQL_USER=admin
         - MYSQL_PASSWORD=admin
       volumes:
-        - mysqldbvol:/val/lib/mysql
+        - mysqldbvol:/var/lib/mysql
     env-app:
-       image: charosregistry.azurecr.io/charos/postpone
+       image: charosregistry.azurecr.io/charos/postpone:latest
        ports:
          - "8080:8080"
        env_file: ./env-var
