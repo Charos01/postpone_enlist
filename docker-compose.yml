@@ -15,7 +15,7 @@ services:
     env-app:
        image: charosregistry.azurecr.io/charos/postpone:latest
        ports:
-         - "8080:80"
+         - "80:8080"
        env_file: ./env-var
        depends_on:
                 db: 
