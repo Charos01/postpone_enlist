@@ -5,7 +5,7 @@ pipeline {
          maven 'maven3'
          jdk 'jdk'
          dockerTool 'docker'
-         org.jenkinsci.plugins.ansible.AnsibleInstallation 'ansible'
+//          org.jenkinsci.plugins.ansible.AnsibleInstallation 'ansible'
          }
     
     stages {
