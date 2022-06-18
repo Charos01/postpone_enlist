@@ -12,6 +12,7 @@ services:
         - MYSQL_PASSWORD=admin
       volumes:
         - mysqldbvol:/val/lib/mysql
+        - ./db-startup:/docker-entrypoint-initdb.d
     env-app:
        image: charosregistry.azurecr.io/charos/postpone:latest
        ports:
@@ -22,3 +23,4 @@ services:
                    condition: service_healthy
 volumes:  
     mysqldbvol:
+
